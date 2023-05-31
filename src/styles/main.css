@@ -1,0 +1,276 @@
+:root {
+    /* --primary-color: #FDF6EC;
+    --secondary-color: #7C9070; */
+    --liner-gradient: linear-gradient(71.9deg, #354c6282 10.77%, #8633332b 92.46%)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%
+}
+body {
+	font-size: 12px;
+	color: #424242
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: #7C9070;
+}
+
+.menu {
+    font-size: 35px;
+    margin: 10px;
+    display: block;
+    width: 50px;
+    cursor: pointer;
+    color: black;
+    background-color: #7C9070;
+    text-decoration: none;
+    border: none;
+}
+
+.nav_logo {
+    line-height: 24px;
+    color: black;
+    padding: 0.7rem;
+    margin: 0;
+}
+
+.nav_item,
+a,
+ul {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.nav_item {
+    box-sizing: border-box;
+    line-height: 24px;
+    display: inline-block;
+}
+.nav_item a {
+    padding: 0.9rem;
+    font-size: 1.3em;
+}
+
+.nav_list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a:hover {
+    background-color: #7C9070;
+    color: black;
+    border-radius: 10px;
+    padding: 0.7rem;
+    font-size: 1.3em;
+}
+
+
+
+
+.hero {
+	display: flex;
+	align-items: center;
+	min-height: 380px;
+	width: 100%;
+	text-align: center;
+	background-position: center;
+	background-color: Black !important
+}
+.heroinner {
+	margin: 0 auto;
+	max-width: 800px
+}
+.hero-h1 {
+	font-weight: 1200;
+	font-size: 56px;
+	color: #FC4F00;
+}
+  
+.hero-h3 {
+	font-size: 32px;
+	font-weight: 1600;
+	color: white;
+}
+  
+.hero-tagline {
+	font-size: 32px;
+	font-weight: 1600;
+	color: white;
+}
+  
+.hero-btn {
+	background-color: #FC4F00;
+	margin-top: 1rem;
+	display: inline-block;
+	padding: 1rem 3rem;
+	color: white;
+	min-height: 44px;
+	min-width: 44px;
+}
+  
+.hero-btn:hover {
+	background-color: #FEE8B0;
+	color: black;
+	min-height: 44px;
+	min-width: 44px;
+}
+
+
+
+
+main {
+	width: 100%;
+	margin: 0 auto;
+}
+.content {
+	padding: 32px;
+	margin-top: 5rem;
+}
+.latest {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.latest h1 {
+	font-weight: 700;
+	font-size: 2em;
+	margin-bottom: 50px;
+	color: black;
+}
+.latest h1:hover {
+	text-decoration: overline;
+}
+.list {
+	margin: 32px auto auto;
+	text-align: left;
+	display: grid;
+	grid-row-gap: 16px;
+}
+.list_item {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}
+.city {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	border-radius: 5px;
+	background-color: #F97B22;
+	padding: 5px 10px 5px;
+	color: white;
+	font-weight: 500;
+}
+.list_item_content {
+	padding: 16px;
+}
+.list_item_thumb {
+	width: 100%;
+	max-height: 200px;
+}
+.list_item_rating {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #999;
+	font-weight: 500;
+}
+.list_item_rating_value {
+	color: red;
+	text-decoration: none
+}
+.list_item_title {
+	font-weight: 500;
+	font-size: 16px;
+	margin-top: 10px;
+	transition: 0.3s opacity;
+}
+.list_item_title:hover {
+	color: #FC4F00;
+}
+.list_item_title a {
+	text-decoration: none;
+	color: inherit
+}
+.list_item_desc {
+	margin-top: -30px;
+	font-size: 12px;
+	line-height: 1.5em
+}
+.skip-link {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	background-color: #bf1722;
+	color: white;
+	padding: 10px;
+	font-size: 20px;
+	z-index: 100;
+	text-decoration: none
+}
+.skip-link:focus {
+	top: 100px
+}
+
+
+
+.footer {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #212121;
+	height: auto;
+	width: 100%;
+	padding-top: 5rem;
+	color: white;
+	margin-top: 5rem;
+	min-height: 44px;
+	min-width: 44px;
+}
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer-content img {
+	height: 4rem;
+	width: 5rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+.footer-content h3 {
+	font-size: 3rem;
+	font-weight: 800;
+	line-height: 3rem;
+}
+  
+.footer-content p {
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
